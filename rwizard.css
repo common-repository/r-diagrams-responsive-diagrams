@@ -1,0 +1,662 @@
+#rwizard {
+   position:            relative;
+   margin:              auto;
+   width:               525px;
+   text-align:          center;
+}
+button.rwizard_add_media {
+   margin-bottom:       5px;
+}
+#rwizard_dataset_question_not_editable,
+#rwizard_dataset_card_not_editable {
+   display:             none;
+   color:               darkgray;
+   padding-left:        1em;
+}
+#rwizard_shortcodes {
+   display:             none;
+}
+div#quiz_components_menu {
+   margin:              auto;
+   width:               730px;
+}
+div#quiz_components_menu  input[type="radio"],
+div#quiz_components_menu  input[type="checkbox"] {
+   transform:           scale(0.75);
+}
+div#quiz_components_menu_overlay {
+   position:            absolute;
+   display:             none;
+   top:                 0;
+   left:                0;
+   width:               730px;
+   height:              100%;
+   background:          rgba(50%, 50%, 50%, 0.2);
+}
+#show_main_menu_disabled_msg {
+   position:            absolute;
+   display:             none;
+   width:               330px;
+   left:                50%;
+   top:                 50%;
+   transform:           translate(-50%, -50%);
+   border:              1px solid black;
+   border-radius:       8px;
+   text-align:          center;
+   padding:             5px;
+   background:          white;
+}
+div.component_options {
+   text-align:          left;
+}
+div.rwizard_accordion div.ui-accordion-content {
+   padding:             5px 1em;
+}
+div.component_options p.rwizard_title {
+   color:               black !important;
+   font-size:           10pt;
+   font-weight:         bold;
+   background:          none !important;
+   padding-right:       3px !important;
+   padding-top:         3px !important;
+   padding-bottom:      3px !important;
+}
+.ui-accordion-content {
+   font-size:           10pt;
+}
+table.quiz_deck_options td {
+   padding-right:       10px;
+   font-size:           10pt;
+}
+table.hotspot_label_prompt_options,
+table.hotspot_label_prompt_options td {
+   border:              0;
+}
+input#question_card_time_limit_sec {
+   width:               2em;
+   height:              20px;
+   min-height:          0;
+   line-height:         normal;
+   padding:             0;
+   text-align:          right;
+}
+.rdgm_deck_options_box {
+   width:               100px;
+}
+div.simpleColorContainer {
+   display:             inline-block;
+   margin-top:          -10px;
+   transform:           translate(0px, 5px);
+   -webkit-transform:   translate(0px, 5px);
+   z-index:             25;
+}
+#hotspot_diagram_options_menu,
+#multiple_choice_options_menu,
+#show_me_options_menu {
+   left:                450px;
+   top:                 250px;
+}
+div.hotspot_options,
+div.hotspot_settings,
+div.hotspot_find_hotspots_options,
+div.hotspot_info_only_options {
+   display:             none;
+}
+div.hotspot_options table {
+   border-collapse:     collapse;
+}
+div.hotspot_options tr.border-top td {
+   border-top:          1px solid lightgray;
+}
+div.hotspot_options input[type="radio"],
+div.hotspot_options input[type="checkbox"] {
+   transform:           scale(0.75);
+}
+input.spotmap_size {
+   width:               3em;
+}
+.options_menu_feedback {
+   display:             none;
+   padding:             5px;
+   background:          #FFFF77;
+}
+#hotspot_editing_menu {
+   min-width:           370px;
+   top:                 60%;
+   left:                50%;
+}
+#hotspot_diagram_options_menu div.rwizard_floating_menu_title button,
+#hotspot_editing_menu         div.rwizard_floating_menu_title button {
+   background:          none;
+}
+#hotspot_highlight {
+   visibility:          hidden;
+   margin-right:        20px;
+}
+.hotspot_style_all {
+   display:             inline-block;
+   float:               right;
+}
+.rdgm_editable,
+.qcard_editable,
+.rdgm_editable p,
+.qcard_editable p {
+   min-height:          12pt;
+   outline:             1px dotted gray;
+   padding:             3px;
+}
+/* User page */
+div#rwizard_rdgm_deck_div .rdgm_editable,
+div#rwizard_rdgm_deck_div .qcard_editable,
+div#rwizard_rdgm_deck_div .rdgm_editable p,
+div#rwizard_rdgm_deck_div .qcard_editable p,
+div.rwizard_rdgm_deck_div .rdgm_editable,
+div.rwizard_rdgm_deck_div .qcard_editable,
+div.rwizard_rdgm_deck_div .rdgm_editable p,
+div.rwizard_rdgm_deck_div .qcard_editable p {
+   min-height:          0 !important;
+   outline:             none !important;
+   padding:             none !important;
+}
+/*
+.rdgm_editable p,
+.qcard_editable p {
+   margin-top:          2px !important;
+}
+*/
+.rwizard_line_height {
+   line-height:         1.7rem !important;
+}
+span.rwizard_placeholder {
+   color:               gray;
+   background:          #ffff55;
+}
+span.rwizard_placeholder span {
+   font-weight:         normal !important;
+   color:               gray;
+   background:          white;
+}
+span.rwizard_placeholder::selection {
+   color:               indianred;
+   background:          #ffff55;
+}
+span.rwizard_placeholder span::selection {
+   color:               gray;
+   background:          white;
+}
+span.rwizard_placeholder::-moz-selection {
+   color:               indianred;
+   background:          #ffff55;
+}
+span.rwizard_placeholder span::-moz-selection {
+   color:               gray;
+   background:          white;
+}
+/*
+div.rdgm_edit_image {
+   outline:             2px dotted blue;
+}
+*/
+div.hangman_label {
+   cursor:              move;
+   border:              1px dotted gray;
+   background:          rgba(256,256,256,0.5);
+}
+#label_options_menu {
+   top:                 60%;
+   left:                50%;
+}
+.label_options_menu_feedback {
+   display:             none;
+   padding:             5px;
+   background:          #FFFF77;
+}
+.rwizard_floating_menu {
+   display:             none;
+   position:            fixed;
+   min-width:           230px;
+   height:              auto !important;
+   border:              1px solid black;
+   box-shadow:          3px 3px 2px gray;
+   background:          white;
+   text-align:          left;
+   padding:             4px;
+   z-index:             303;
+}
+div.rwizard_floating_menu_header {
+   position:            relative;
+   height:              24px;
+   margin-bottom:       2px;
+   padding:             2px;
+   color:               white;
+   background:          rgba(79, 112, 153, 1);
+   font-weight:         bold;
+   cursor:              move;
+}
+div.rwizard_floating_menu_title {
+   position:            absolute;
+   left:                2px;
+   top:                 3px;
+   width:               calc(100% - 24px);  /* Room for exit icon. */
+}
+.rwizard_icon_menu_exit {
+   float:           right;
+   border:          none;
+   margin-top:      3px;
+   cursor:          pointer;
+}
+.current_answer_choice {
+   background:          none;
+   border:              1px dotted gray;
+   padding:             0px 2px;
+   outline:             none;
+}
+.highlight_answer_choice {
+   background:          #ffffbb;
+   border:              1px dotted gray;
+   padding:             0px 2px;
+   outline:             2px solid #ff55ff;
+}
+.highlight_selected_choice_label {
+   outline:             2px solid #ff55ff !important;
+   background:          #ffffbb !important;
+}
+.highlight_selected_word {
+   outline:             2px solid #ff55ff !important;
+}
+#new_question_type_menu {
+   display:             none;
+   position:            absolute;
+   border:              1px solid black;
+   box-shadow:          3px 3px 2px gray;
+   background:          white;
+   text-align:          left;
+   padding:             5px;
+}
+div.rwizard_menu_item,
+div.rwizard_menu_item_inactive {
+   position:               relative;
+   border:                 1px solid transparent;
+   background:             white;
+   line-height:            1.4em;
+   -moz-user-select:       none;
+   -webkit-user-select:    none;
+   -ms-user-select:        none;
+}
+div.rwizard_menu_item_not_active {
+   position:               relative;
+   border:                 1px solid transparent;
+   background:             lightgray;
+   line-height:            1.4em;
+   -moz-user-select:       none;
+   -webkit-user-select:    none;
+   -ms-user-select:        none;
+}
+.menu_spinner {
+   visibility:             hidden;
+}
+div.rwizard_menu_item:hover {
+   border:                 1px solid gray;
+   cursor:                 pointer;
+}
+div.rwizard_menu_item_not_active:hover {
+   border:                 1px solid gray;
+   cursor:                 pointer;
+   background:             rgb(230, 230, 230);
+}
+div.rwizard_menu_item:active {
+   outline:                2px solid lightgray;
+}
+div.rwizard_menu_question_label {
+   display:                inline-block;
+   vertical-align:         -3px;
+   width:                  370px;
+   white-space:            nowrap;
+   overflow:               hidden;
+}
+div.unit_combobox,
+div.topic_combobox {
+   display:                inline-block;
+   width:                  100px;
+   margin-left:            10px;
+}
+/* Combobox pulldown icon */
+div.unit_combobox a.ui-button-icon-only,
+div.topic_combobox a.ui-button-icon-only {
+   border:                 none;
+}
+            /* Buttons inside menu item float right. */
+.rwizard_menu_item button.rdgm_image_button {
+   float:                 right;
+   margin-left:           3px;
+}
+            /* Options (alignment, border styles...) table. */
+table.quiz_deck_options {
+   border:                 0;
+}
+input.page_title {
+   width:                  8em;
+}
+input.width_px,
+input.height_px,
+input.spacing_px,
+input.questions_cards_to_show {
+   width:                  3em;
+   text-align:             right;
+   padding:                0 2px;
+   min-height:             20px;
+   line-height:            normal;
+}
+input.questions_cards_to_show {
+   width:                  2em;
+   text-align:             left;
+}
+select.options_select {
+   min-height:             20px;
+   line-height:            normal;
+   transform:              translateY(-1.5px);
+   font-size:              9pt;
+}
+            /* Sortable questions. */
+#rwizard_questions_sortable {
+   padding-top:           3px;
+   padding-bottom:        3px;
+   max-height:            200px;
+   overflow-y:            auto;
+}
+#rwizard_questions div.sortable {
+   cursor:                move;
+}
+            /*
+#free_form_options_menu {
+   left:                   550px;
+   top:                    300px;
+}
+            */
+.rdgm_image_button {
+   border:                 none;
+   background:             none;
+   padding:                0;
+   cursor:                 pointer;
+}
+            /* Keep bubbleBar in front of modal overlay. */
+div#bubbleBarWrapper {
+   z-index:                999996;
+   width:                  550px;
+   overflow:               hidden;
+}
+div.mce-floatpanel {
+   z-index:                999996 !important;
+}
+div.multiple_choice_tooltip.ui-tooltip {
+   font-size:              10pt;
+}
+div.ui-widget-overlay.ui-front {
+   z-index:                99;
+   opacity:                1.0;
+}
+div#dialog_rwizard {
+   width:                  100%  !important;
+   font-size:              10pt;
+   background:             white !important;
+}
+#change_media_info_icon {
+   display:                none;
+}
+div#dialog_rwizard_media_upload {
+   font-size:              10pt;
+   background:             white !important;
+}
+.ui-dialog-titlebar {
+   border:                 0 !important;
+   border-radius:          0 !important;
+   padding:                2px 0.4em !important;
+   color:                  white !important;
+   font-weight:            bold !important;
+   background:             rgba(79, 112, 153, 1) !important;
+}
+div.modal_dialog_rwizard {
+   /* Beat Gutenberg sidebar. */
+   z-index:                999995 !important;
+   position:               fixed  !important;
+   top:                    0      !important;
+}
+div.modal_dialog_rwizard div.ui-dialog-titlebar {
+   display:                inline-block;
+   box-sizing:             border-box;
+   width:                  100%;
+}
+            /* No close x-icon in modal dialog titlebar. */
+div.modal_dialog_rwizard button.ui-dialog-titlebar-close {
+   display:                none !important;
+}
+            /* Link in titlebar. */
+a.rwizard_view_edit_shortcodes,
+a.rwizard_exit_view_edit_shortcodes {
+   position:               absolute;
+   right:                  10px;
+   font-weight:            normal;
+   color:                  white;
+   display:                none;
+}
+div.ui-dialog-buttonpane {
+   background:             lightgray;
+}
+div.ui-dialog-buttonset {
+   float:                  none !important;
+}
+div.ui-dialog-buttonpane button.ui-button {
+   font-size:              10pt;
+   font-weight:            bold;
+   color:                  white;
+   background:             #65a9d7;
+}
+div.ui-dialog-buttonpane button.ui-button:hover {
+   color:                  #ccc;
+   background:             #28597a;
+}
+.ui-widget-header .ui-state-hover,
+   color:                  #0000ff !important;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+   color:                  #1c94c4 !important;
+}
+.ui-state-active {
+   border:                 1px solid #fbd850 !important;
+   color:                  #eb8f00 !important;
+ }
+.rwizard_top {
+   vertical-align:         top;
+}
+.rwizard_center {
+   text-align:             center;
+}
+.rwizard_float_right {
+   float:                  right;
+}
+.rwizard_highlight {
+   background:             yellow;
+}
+.rwizard_green {
+   color:                  green;
+   font-weight:            bold;
+}
+.rwizard_red {
+   color:                  red;
+   font-weight:            bold;
+}
+.rwizard_gray {
+   color:                  gray;
+}
+.rwizard_inline_block {
+   display:                inline-block;
+}
+.rwizard_normal {
+   font-size:              10pt;
+   font-weight:            normal !important;
+}
+.rwizard_smaller {
+   font-size:              80% !important;
+}
+.rwizard_input_smaller {
+   transform:           scale(0.8);
+   -webkit-transform:   scale(0.8);
+}
+.rwizard_shift_icon {
+   transform:              translate(0px, 2px);
+   -webkit-transform:      translate(0px, 2px);
+}
+.rwizard_shift_icon_smaller {
+   transform:              translate(0px, 2px) scale(0.8);
+   -webkit-transform:      translate(0px, 2px) scale(0.8);
+}
+.rwizard_pointer {
+   cursor:                 pointer;
+}
+.rwizard_background_light_gray {
+   background:             lightgray;
+}
+.rwizard_paintbucket {
+   cursor:                 url(images/icon_paintbucket16x16.svg) 22 19, auto;
+}
+.rwizard_help {
+   cursor:                 help;
+}
+.custom-combobox {
+   position:            relative;
+   display:             inline-block;
+   white-space:         nowrap;
+}
+.custom-combobox-toggle {
+   position:            absolute;
+   top:                 0;
+   bottom:              0;
+   margin-left:         -1px;
+   padding:             0;
+   background:          none !important;
+   width:               1em  !important;
+   border-left:         0;
+   border-radius:       0    !important;
+}
+.custom-combobox-toggle:hover {
+   border:              1px solid #d9d9d9;
+   background:          #cee3f6 !important;
+   }
+   .custom-combobox-input {
+   font-size:           10pt;
+   color:               black;
+   margin:              0;
+   padding:             1px 2px 2px;
+   background:          none !important;
+   border-right:        0;
+   border-radius:       0;
+}
+.rdgm_fixed {
+   position:            fixed !important;
+}
+/* Simple resize to fit image content. */
+div#dialog_rwizard div.rdgm {
+   display:             inline-block;
+   width:               min-content;
+   min-width:           500px;   /* Will be superseded by rdgm div style
+                                    attribute */
+   outline:             1px dotted gray;
+}
+/* Original image visible underneath canvas (canvas hotspots that are semi-
+ * transparent let original show through). */
+div#dialog_rwizard div.hotspot_image_stack {
+   outline:             1px dotted gray;
+}
+/*
+div#dialog_rwizard div.hotspot_image_stack img.rdgm_layer0 {
+   position:            absolute;
+   width:               100%;
+   height:              100%;
+   z-index:             0;
+}
+*/
+div#dialog_rwizard span.rdgm_show_me {
+   color:               white !important;
+}
+div#dialog_rwizard .rwizard_display_block_important {
+   display:             block !important;
+}
+div#dialog_rwizard .rwizard_display_none {
+   display:             none;
+}
+div#dialog_rwizard .rwizard_display_none_important {
+   display:             none !important;
+}
+div#dialog_rwizard div.hotspot_image_stack img.layer0_edited {
+   position:            absolute;
+   left:                0;
+   top:                 0;
+}
+div#dialog_rwizard div.hotspot_image_stack canvas.layer0_edited {
+   position:            absolute;
+   left:                0;
+   top:                 0;
+   display:             block !important;
+   z-index:             1;
+}
+div#dialog_rwizard div.hotspot_image_stack canvas.rdgm_style_layer {
+   display:             block !important;
+}
+div#dialog_rwizard div.hotspot_image_stack img.layer0_edited {
+   display:             block;
+}
+div#dialog_rwizard div.hotspot_image_stack_size_feedback {
+   display:             none;
+   position:            absolute;
+   right:               -5px;
+   bottom:              -5px;
+   transform:           translate(100%, 100%);
+   padding:             0 3px;
+   color:               white;
+   background:          black;
+   z-index:             258;
+}
+div#dialog_rwizard div.hotspot_label_feedback {
+   display:             none !important;
+}
+span.hotspot_edit_spinner .ui-spinner {
+   line-height:         1em;
+   transform:           translate(0px, -1px);
+   -webkit-transform:   translate(0px, -1px);
+}
+span.hotspot_edit_spinner {
+   color:               gray;
+   font-size:           9pt;
+}
+input.hotspot_edit_spinner {
+   font-size:           8pt;
+   width:               2.4em;
+   margin:              0 20px 0 0;
+   padding:             0;
+   text-align:          right;
+}
+div.rdgm_rectlipse {
+   display:          none;
+   position:         absolute;
+   left:             40%;
+   top:              30%;
+   width:            50px;
+   height:           50px;
+   border:           2px solid yellow;
+   border-radius:    50% 50%;
+   outline:          1px dotted gray;
+   cursor:           move;
+   z-index:          257;
+}
+div.icon_rectlipse {
+   display:          inline-block;
+   width:            12px;
+   height:           12px;
+   border-radius:    50% 50%;
+   background:       rgba(0,210,255, 0.47);
+}

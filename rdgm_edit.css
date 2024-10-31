@@ -1,0 +1,255 @@
+.rdgm_edit_image {
+   display:          inline-block;
+}
+.rdgm_edit_image img {
+   max-width:        none;
+}
+#rdgm_edit_main_menu {
+   position:         fixed;
+   width:            26rem;
+   height:           auto;
+   line-height:      1.4em;
+   box-shadow:       3px 3px 2px gray;
+/* To beat TinyMCE toolbars at 999. */
+   z-index:          1000;
+   right:            125px;
+   top:              250px;
+   border:           2px solid rgba(79, 112, 153, 1);
+}
+div.rdgm_edit_main_menu_header {
+   position:         relative;
+   height:           22px !important;
+   color:            white;
+   background:       rgba(79, 112, 153, 1);
+   font-weight:      bold;
+   cursor:           move;
+}
+.icon_rdgm {
+   position:         absolute;
+   width:            20px;
+   height:           20px;
+   background:       white;
+   border:           none;
+}
+div.rdgm_edit_main_menu_title {
+   position:         absolute;
+   left:             24px;
+   top:              2px;
+   font-family:      arial, verdana, sans-serif;
+}
+.icon_main_menu_exit {
+   float:            right;
+   border:           none;
+   margin-top:       2px;
+   margin-right:     1px;
+   cursor:           pointer;
+}
+#rdgm_edit_main_menu_items {
+   background:              white;
+   font-family:             arial, verdana, sans-serif;
+   font-size:               10pt;
+}
+.rdgm_edit_main_menu_item,
+.rdgm_edit_main_menu_item_inactive {
+   border:                  1px solid white;
+   -moz-user-select:        none;
+   -webkit-user-select:     none;
+   -ms-user-select:         none;
+}
+.rdgm_edit_main_menu_item_disabled {
+   border:                  1px solid white;
+   color:                   gray;
+   -moz-user-select:        none;
+   -webkit-user-select:     none;
+   -ms-user-select:         none;
+}
+.rdgm_edit_main_menu_item:hover {
+   border:           1px solid gray;
+   cursor:           pointer;
+}
+.rdgm_edit_main_menu_item:active {
+   outline:          2px solid lightgray;
+}
+.rdgm_edit_main_menu_feedback {
+   display:          none;
+   padding:          5px;
+   background:       #FFFF77;
+}
+img.click_on____exit {
+   float:            right;
+   margin-top:       2px;
+   margin-right:     2px;
+   cursor:           pointer;
+}
+.rdgm_edit_image_button {
+   border:                  none;
+   background:              none;
+   padding:                 0;
+   cursor:                  pointer;
+}
+.rdgm_edit_highlight_label_border {
+   padding:          0px 2px;
+   border:           1px dotted gray;
+}
+#rdgm_register_qqs_dialog_box {
+   position:         fixed !important;
+   min-width:        500px;
+   display:          none;
+   box-shadow:       3px 3px 2px gray;
+/* To beat TinyMCE toolbars at 999 and main menu at 1000 and rwizard modal
+ * at 999995. */
+   z-index:          999996;
+   left:             250px;
+   top:              150px;
+   background:       white;
+   border:           2px solid rgba(79, 112, 153, 1);
+   font-family:      arial, verdana, sans-serif;
+   font-size:        10pt;
+}
+.select2-container {
+   z-index:          999999;
+}
+#rdgm_register_qqs_login,
+#rdgm_register_qqs_main {
+   position:             relative;
+   display:              none;
+   background:           white;
+   padding:              5px;
+}
+#rdgm_register_qqs_login input[type="text"],
+#rdgm_register_qqs_login input[type="password"] {
+   width:                200px !important;
+}
+#rdgm_register_qqs_user {
+   text-align:           right;
+   display:              none;
+                     /* top right bot left */
+   padding:              2px 5px 0px 5px;
+   background:           white;
+}
+#rdgm_register_qqs_return_to_wizard {
+   display:              none;
+   text-align:           right;
+}
+.ui-dialog {
+   padding:              0 !important;
+   border:               2px solid rgba(79, 112, 153, 1) !important;
+}
+.ui-dialog-titlebar {
+   border:               0 !important;
+   border-radius:        0 !important;
+   padding:              2px 0.4em !important;
+   color:                white !important;
+   font-weight:          bold !important;
+   background:           rgba(79, 112, 153, 1) !important;
+}
+/* No close x-icon in login modal dialog titlebar.
+button.ui-dialog-titlebar-close {
+   display:              none;
+}
+*/
+/* Let rwizard dialog get on top of these! */
+.wp-editor-expand #wp-content-editor-tools {
+   z-index:              100 !important;
+}
+.wp-editor-expand div.mce-toolbar-grp {
+   z-index:              auto !important;
+}
+/* Keep bubble-bar wrapper on top of rwizard dialog. */
+#bubbleBarWrapper {
+   z-index:              102;
+}
+.qbookmark {
+   display:              none;
+}
+select.new_existing_dataset {
+   height:               22px;
+   width:                250px;
+   padding:              0;
+   font-size:            10pt;
+}
+p.login_error {
+   visibility:           hidden;
+   color:                red;
+   font-weight:          bold;
+}
+#new_account_info {
+   position:             absolute;
+   top:                  40px;
+   left:                 75px;
+   width:                350px;
+   padding:              8px;
+   background:           white;
+   border:               1px solid black;
+   box-shadow:           -3px 3px 2px gray;
+   display:              none;
+}
+img.new_account_info {
+   border:               0px;
+   cursor:               help;
+}
+.ui-resizable-se {
+   width:                16px !important;
+   height:               16px !important;
+}
+.cursor_help {
+   cursor:               help;
+}
+table.rdgm_register_qqs {
+   border-spacing:       0;
+}
+table.rdgm_register_qqs th,
+table.rdgm_register_qqs td {
+   font-size:            10pt;
+   padding-left:         5px;
+   padding-right:        5px;
+}
+table.rdgm_register_qqs th {
+   vertical-align:       bottom;
+}
+table.rdgm_register_qqs td {
+   vertical-align:       middle;
+}
+table.rdgm_register_qqs th.rdgm_edit-border-left,
+table.rdgm_register_qqs td.rdgm_edit-border-left {
+   border-left:          2px solid gray;
+}
+table.rdgm_register_qqs button {
+   vertical-align:       -2px;
+}
+img.icon_clickable {
+   border:               0;
+   cursor:               pointer;
+   transform:            translate(0px, 3px);
+   -webkit-transform:    translate(0px, 3px);
+}
+input.register_checkbox {
+   margin:               0 !important;
+}
+input.rdgm_checkbox:before {
+   content:              none !important;
+}
+input.enter_qrecord_id {
+   width:            10em;
+   font-size:        inherit;
+   padding-left:     0px;
+}
+#register_qq_feedback {
+   font-weight:      bold;
+}
+.rdgm_edit_inline_block {
+   display:          inline-block;
+}
+.rdgm_edit_link {
+   color:            blue;
+   text-decoration:  underline;
+}
+.rdgm_edit_center {
+   text-align:       center;
+}
+.rdgm_edit_smaller {
+   font-size:        80%;
+}
+.rdgm_edit_icon_smaller {
+   transform:        scale(0.8);
+}
